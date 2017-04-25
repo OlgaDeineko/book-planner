@@ -1,9 +1,9 @@
 'use strict';
 
-angular.module('Login', []).component('Login', {
+angular.module('login', []).component('login', {
     templateUrl: './app/login/login.template.html',
-    controller: [   function LoginController() {
+    controller: function LoginController() {
 
 
-    }]
+    }
 });

@@ -3,8 +3,9 @@
 // Define the 'BookPlanner' module
 angular.module('BookPlanner', [
   'ngRoute',
-  'Dashboard',
-  'Login',
-  'MyBooks',
-  'BookTitle'
-])
+  'dashboard',
+  'login',
+  'myBooks',
+  'bookTitle',
+  'passwordReset'
+]);

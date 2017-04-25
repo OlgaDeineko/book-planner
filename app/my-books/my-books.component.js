@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('MyBooks', []).component('MyBooks', {
+angular.module('myBooks', []).component('myBooks', {
     templateUrl: './app/my-books/my-books.template.html',
-    controller: [ '$location',  function MyBooksController($location) {
+    controller: [function MyBooksController() {
 
 
     }]

@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('Dashboard', []).component('Dashboard', {
+angular.module('dashboard', []).component('dashboard', {
     templateUrl: './app/dashboard/dashboard.template.html',
-    controller: ['$location', function DashboardController($location) {
+    controller: [function DashboardController() {
 
 
     }]

@@ -13,6 +13,8 @@ angular.module('BookPlanner').config(['$locationProvider', '$routeProvider',
             template: '<my-books></my-books>'
         }).when('/books:id', {
             template: '<book-title></book-title>'
+        }).when('/password-reset', {
+            template: '<password-reset></password-reset>'
         }).otherwise('/');
     }
 ]);
