@@ -4,7 +4,7 @@
 angular.module('BookPlanner', [
   'ngRoute',
   'Dashboard',
-  'Registration',
+  'Login',
   'MyBooks',
   'BookTitle'
 ])

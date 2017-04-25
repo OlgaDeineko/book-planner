@@ -5,15 +5,15 @@ angular.module('BookPlanner').config(['$locationProvider', '$routeProvider',
     function config($locationProvider, $routeProvider) {
         $locationProvider.hashPrefix('!');
 
-        $routeProvider.when('/dashboard', {
+        $routeProvider.when('/', {
             template: '<dashboard></dashboard>'
-        }).when('/registration', {
-            template: '<registration></registration>'
-        }).when('/myBooks', {
+        }).when('/login', {
+            template: '<login></login>'
+        }).when('/books', {
             template: '<my-books></my-books>'
-        }).when('/bookTitle', {
+        }).when('/books:id', {
             template: '<book-title></book-title>'
-        }).otherwise('/dashboard');otherwise('/myBooks');
+        }).otherwise('/');
     }
 ]);
 
