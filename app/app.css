@@ -116,7 +116,7 @@ body>header {
     color: red;
 }
 
-.link_password_reset:hover{
+.link:hover{
     color: #0af;
     text-decoration: underline;
 }
