@@ -1,28 +1,131 @@
 /* app css stylesheet */
-
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+* {
+    box-sizing: border-box;
 }
 
-.menu:before {
-  content: "[";
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #e6e6e6;
+    font-family: "Ubuntu",Helvetica,Arial,sans-serif;
+    color: #222;
+    font-size: 18px;
+    line-height: 1.16667;
+    font-weight: normal;
 }
 
-.menu:after {
-  content: "]";
+body > .page {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    height: calc(100% - 4rem);
+    margin: 0;
+    padding-bottom: 2rem;
+    overflow-y: auto;
 }
 
-.menu > li {
-  display: inline;
+body > .page > .container {
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+    min-height: calc(100vh - 4rem - 0rem);
+    max-width: 55rem;
+    background-color: #fff;
+    z-index: 1;
 }
 
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
+body>header, body>footer {
+    width: 100%;
 }
-.red{
-  color: red;
+
+body>header, body>nav, body>aside {
+    position: fixed;
+    top: 0;
 }
+
+
+a, a:hover {
+    text-decoration: none;
+}
+a, a:visited {
+    color: #05f;
+}
+
+hr {
+    margin: 1.5rem 0;
+    padding: 0;
+    border: 0 none;
+    border-top: 1px solid;
+    opacity: 0.3;
+}
+
+
+/*HEADER*/
+body>header {
+    left: 0;
+    padding: 0.75rem;
+    padding-left: 8rem;
+    height: 4rem;
+    z-index: 60;
+}
+
+.page__header {
+    background-color: #fff;
+    box-shadow: 0 0.25em 1em rgba(0,0,0,0.2);
+}
+
+.logo {
+    display: inline-block;
+    height: 2rem;
+}
+
+.logo_text{
+    color:#244669;
+    vertical-align:sub;
+    font-size: 1rem;
+}
+/*HEADER*/
+
+/*LOGIN/SUBSCRIBE*/
+
+.login_form {
+    margin: 0 auto;
+    max-width: 20em;
+    font-weight: 300!important;
+}
+
+.btn{
+    display: inline-block;
+    margin: 0.25em 0;
+    padding: 0.5em;
+    background-color:#eb6e14;
+    border: 0.125em solid #eb6e14;
+    box-shadow: 0 0.125em 0.375em rgba(0,0,0,0.15);
+    color: #ffffff;
+}
+.btn:hover{
+    color: #ffffff;
+    opacity: 0.7;
+    transition: all linear 0.2s;
+}
+
+.red {
+    color: red;
+}
+
+.link_password_reset:hover{
+    color: #0af;
+    text-decoration: underline;
+}
+label{
+    font-weight: normal !important;
+}
+/*LOGIN/SUBSCRIBE*/
+
+
+
+
+
