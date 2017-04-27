@@ -10,5 +10,8 @@ angular.module('BookPlanner', [
   'passwordReset',
   'loginService',
   'ngCookies',
-  'ngStorage'
+  'ngStorage',
+  'bookServise',
+  'ui.bootstrap',
+  'ngAnimate'
 ]);

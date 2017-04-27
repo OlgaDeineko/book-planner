@@ -31,8 +31,8 @@ angular.module('login', []).component('login', {
                 data:{'username':self.register.email,
                     'password':self.register.password}
             }).success(function(data) {
-                AuthenticationService.SetCredentials(self.register.email, self.register.password);
-                $location.path('/');
+                // AuthenticationService.SetCredentials(self.register.email, self.register.password);
+                $location.path('#!/');
             });
         }
 

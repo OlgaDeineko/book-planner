@@ -61,7 +61,9 @@ hr {
     border-top: 1px solid;
     opacity: 0.3;
 }
-
+li{
+    list-style: none;
+}
 
 /*HEADER*/
 body>header {
@@ -99,8 +101,7 @@ body>header {
 
 .btn{
     display: inline-block;
-    margin: 0.25em 0;
-    padding: 0.5em;
+    margin: 0.25em;
     background-color:#eb6e14;
     border: 0.125em solid #eb6e14;
     box-shadow: 0 0.125em 0.375em rgba(0,0,0,0.15);
@@ -115,7 +116,9 @@ body>header {
 .red {
     color: red;
 }
-
+.link{
+    margin: 1em;
+}
 .link:hover{
     color: #0af;
     text-decoration: underline;
@@ -123,8 +126,19 @@ body>header {
 label{
     font-weight: normal !important;
 }
+hr{
+    clear:both;
+}
 /*LOGIN/SUBSCRIBE*/
 
+/*BOOK LIST*/
+.books {
+    margin: 0.5em 0;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0.125em 0.5em rgba(0,0,0,0.2);
+}
+/*BOOK LIST*/
 
 
 
