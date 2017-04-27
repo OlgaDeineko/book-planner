@@ -7,5 +7,8 @@ angular.module('BookPlanner', [
   'login',
   'myBooks',
   'bookTitle',
-  'passwordReset'
+  'passwordReset',
+  'loginService',
+  'ngCookies',
+  'ngStorage'
 ]);

@@ -91,7 +91,7 @@ body>header {
 
 /*LOGIN/SUBSCRIBE*/
 
-.login_form {
+.login_form, .register_form {
     margin: 0 auto;
     max-width: 20em;
     font-weight: 300!important;
