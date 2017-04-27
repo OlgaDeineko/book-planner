@@ -1,8 +1,9 @@
+(function () {
 'use strict';
 
 angular.module('loginService',[]).factory('AuthenticationService',AuthenticationService);
-    AuthenticationService.$inject =['$http', '$cookies', '$rootScope', '$timeout'];
-            function  AuthenticationService($http, $cookies, $rootScope) {
+    AuthenticationService.$inject =['$http', '$cookieStore', '$rootScope', '$timeout'];
+            function  AuthenticationService($http, $cookieStore, $rootScope) {
                 var service = {};
 
                 service.Login = Login;
@@ -18,6 +19,7 @@ angular.module('loginService',[]).factory('AuthenticationService',Authentication
                     };
 
                     $http.get('http://localhost:3000/users ', {headers : headers}).success(function(data) {
+                        console.log(data);
                         var response = {success: false }
                         if (data.username) {
                             response = { success: true };
@@ -50,7 +52,7 @@ angular.module('loginService',[]).factory('AuthenticationService',Authentication
                     $cookies.putObject('globals', $rootScope.globals, { expires: cookieExp });
                 };
 
-                service.ClearCredentials = function () {
+                function ClearCredentials   () {
                     $rootScope.globals = {};
                     $cookieStore.remove('globals');
                     $http.defaults.headers.common.Authorization = 'Basic ';
@@ -142,5 +144,5 @@ var Base64 = {
     }
 };
 
-
+})();
 
