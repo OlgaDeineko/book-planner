@@ -1,8 +1,68 @@
-<div class="modal-body"><div>{{$ctrl.greeting}}</div>
-    <form name="bookForm" role="form" ng-submit="$ctrl.addBook()" >
+<div class="modal-body row">
+    <div class="col-md-12">
+        <div class="row">
+            <div>{{$ctrl.greeting}}</div>
+            <h2>Create a new book plan</h2>
+            <hr>
+            <div name="bookForm" role="form" ng-submit="$ctrl.addBook()">
 
+                <div class="form-group">
+                    <label>Book Title <span class="red">*</span></label>
+                    <span class="glyphicon glyphicon-question-sign" aria-hidden="true">
+                <span class="tooltip"
+                      title="What is the title, or working title of your book.This will be used for the project name."></span>
+            </span>
+                    <input type="text" class="form-control" placeholder="What is the working title of your book?">
+                </div>
+            </div>
 
-        <button class="btn btn-success" type="submit" value="Add note">Add book</button>
-        <button class="btn btn-warning" type="button" ng-click="$ctrl.handleClose()">Close</button>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Please select the type of book plan you would like to create.</label>
+                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true">
+                    <span class="tooltip"
+                          title="Book Planner will create a customized plan for your book project based upon how much time you have until you want to see the book in stores. The more time you have to work on the book project, the more tasks Book Planner can include to assure your book is in the best possible condition before it goes to market."></span>
+            </span>
+                        <select class="form-control">
+                            <option>{{type}}</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>What type of book are you planning to publish?</label>
+
+                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true">
+                    <span class="tooltip"
+                          title="We can design your plan around publishing a book in print, eBook, or both formats. If you are unsure, select Both."></span>
+            </span>
+                        <select class="form-control">
+                            <option>Print</option>
+                            <option>eBook</option>
+                            <option>Print an eBook</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>When do you want to start your book plan?</label>
+                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true">
+                    <span class="tooltip"
+                          title="When do you want to start your book plan?  Although we recommend getting started right away, if you want to start the plan at a future date, Book Planner can hold the project start until you are ready to begin work."></span>
+            </span>
+                        <input type="date" class="form-control">
+                        <p>Estimated finished date: <b></b></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Book Plan Details</h2>
+                    <h4> Completion Time: Approximately 3 Months </h4>
+                    <p>This plan is for authors who require no manuscript editing and uses digital proofing to
+                        facilitate a fast production turnaround. This plan allows for full design and production, as
+                        well as abridged post-production activities. It removes copyediting tasks, but does include a
+                        more comprehensive review and proofing process for the interior of the book.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-success" type="submit" value="Add note">Add book</button>
+    <button class="btn btn-warning" type="button" ng-click="$ctrl.handleClose()">Close</button>
     </form>
 </div>

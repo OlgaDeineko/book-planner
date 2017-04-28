@@ -41,6 +41,7 @@ angular.module('myBooks', []).component('myBooks', {
             self.modalInstance.close(self.modalData);
 
         };
+        self.example = new Date(2013, 9, 22);
 
     }]
 });

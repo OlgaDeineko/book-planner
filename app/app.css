@@ -141,5 +141,15 @@ hr{
 /*BOOK LIST*/
 
 
+/*MODAL WINDOW*/
+.modal-dialog{
+    width: 90% !important;
 
-
+}
+.modal-body{
+    margin: 0.5rem;
+}
+.glyphicon{
+    color: #00aaff;
+}
+/*MODAL WINDO*/
